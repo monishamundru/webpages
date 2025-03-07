@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=control_point_duplicate" />
+
+    <style>
+        section {
+            position: relative;
+            /* To position text container within */
+            width: 100%;
+            height: 90vh;
+            /* Full height of the viewport */
+        }
+        
+        section img {
+            position: absolute;
+            /* Set image to fill the section */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ensure the image scales proportionally */
+            z-index: 1;
+            /* Send image to the back */
+        }
+        
+        .text-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 0 700px auto;
+            border-radius: 2px;
+            z-index: 2;
+            /* Ensure it stays above the image */
+            text-align: center;
+            margin: 90px 0 20px 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        h1 {
+            margin: 20px 0 20px 20px;
+        }
+        
+        p {
+            margin: 20px 40px 20px 0;
+        }
+        
+        .button-text {
+            padding: 10px 10px;
+            font-size: 16px;
+            background-color: antiquewhite;
+            color: black;
+            margin-right: 20px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        
+        .navbar-brand {
+            color: skyblue;
+            padding-right: 30px;
+        }
+        
+        .second-text {
+            color: black;
+        }
+        
+        .btn btn-outline-success {
+            margin-left: 500px;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <span class="material-symbols-outlined">
+                control_point_duplicate
+            </span>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Medi<span class="second-text">plus</span></a>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Doctor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <button class="btn btn-outline-success" type="submit" background-color: blue;>Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section>
+
+        <img class="image-container" src="C:\HTML,CSS,Bootstrap\Basic Position\doctor-6701410_1280.jpg" width="screen-width">
+        <div class="text-container">
+            <h1>Do you need Emergency Medical care? Call 108</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque porttitor dictum turpis gravida.</p>
+
+            <button class="button-text">Contact Now</button>
+            <button class="button-text">Learn Now</button>
+
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
