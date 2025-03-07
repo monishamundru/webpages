@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1·0">
+    <title>HTML form</title>
+</head>
+
+<body>
+    <fieldset>
+        <form>
+            <h3>Information of the Animal owner</h3>
+            <div>
+                <section>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" placeholder="Enter the name" required name="name" />
+                </section><br>
+                <section>
+                    <label for="Surname">Surname: </label>
+                    <input type="text" id="surname" placeholder="Enter the surname" required name="Surname" />
+                </section><br>
+                <section>
+                    <label for="phone">Phone no: </label>
+                    <input type="number" id="number" placeholder="Enter the number" required name="number" />
+                </section>
+                <br />
+            </div>
+            <h3>Gender</h3>
+            <div>
+                <section>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </section>
+                <section>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </section>
+            </div><br />
+            <h3>Country</h3>
+            <div>
+                <label for="country">Select your country </label>
+                <select name="country" id="country">
+<option>countries</option>
+<option value="USA">America</option>
+<option value="france">France</option>
+<option value="germany">Germany</option>
+<option value="turkey">turkey</option>
+</select> no file choosen
+            </div>
+            <br />
+            <div>
+                <label for="file">Select File </label>
+                <input type="file" id="file">
+            </div>
+            <button>Submit</button>
+        </form>
+    </fieldset>
+</body>
+
+</html>
